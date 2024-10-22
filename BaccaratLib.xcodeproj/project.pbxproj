@@ -15,6 +15,8 @@
 		E732C84A2CC7A5AD00867A2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732C8492CC7A5AD00867A2B /* ContentView.swift */; };
 		E732C84C2CC7A5AF00867A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E732C84B2CC7A5AF00867A2B /* Assets.xcassets */; };
 		E732C84F2CC7A5AF00867A2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E732C84E2CC7A5AF00867A2B /* Preview Assets.xcassets */; };
+		E732C8542CC7B0C000867A2B /* BaccaratLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732C8532CC7B0C000867A2B /* BaccaratLib.swift */; };
+		E732C8582CC7B7EE00867A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E732C8572CC7B7EE00867A2B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		E732C8492CC7A5AD00867A2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E732C84B2CC7A5AF00867A2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E732C84E2CC7A5AF00867A2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E732C8532CC7B0C000867A2B /* BaccaratLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaccaratLib.swift; sourceTree = "<group>"; };
+		E732C8572CC7B7EE00867A2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 		E732C8292CC7A48000867A2B /* BaccaratLib */ = {
 			isa = PBXGroup;
 			children = (
+				E732C8562CC7B71A00867A2B /* Assets */,
+				E732C8552CC7B52500867A2B /* Classes */,
 				E732C82A2CC7A48000867A2B /* BaccaratLib.h */,
 				E732C82B2CC7A48000867A2B /* BaccaratLib.docc */,
 			);
@@ -120,6 +126,22 @@
 				E732C84E2CC7A5AF00867A2B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E732C8552CC7B52500867A2B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E732C8532CC7B0C000867A2B /* BaccaratLib.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E732C8562CC7B71A00867A2B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E732C8572CC7B7EE00867A2B /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E732C8582CC7B7EE00867A2B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E732C8542CC7B0C000867A2B /* BaccaratLib.swift in Sources */,
 				E732C82C2CC7A48000867A2B /* BaccaratLib.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +457,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +491,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,6 +513,7 @@
 		E732C83F2CC7A48000867A2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9C9D64CGK8;
@@ -503,6 +530,7 @@
 		E732C8402CC7A48000867A2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9C9D64CGK8;
