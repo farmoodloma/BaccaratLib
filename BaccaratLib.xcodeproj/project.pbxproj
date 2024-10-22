@@ -11,6 +11,10 @@
 		E732C8322CC7A48000867A2B /* BaccaratLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E732C8272CC7A48000867A2B /* BaccaratLib.framework */; };
 		E732C8372CC7A48000867A2B /* BaccaratLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732C8362CC7A48000867A2B /* BaccaratLibTests.swift */; };
 		E732C8382CC7A48000867A2B /* BaccaratLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E732C82A2CC7A48000867A2B /* BaccaratLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E732C8482CC7A5AD00867A2B /* BaccaratLibExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732C8472CC7A5AD00867A2B /* BaccaratLibExampleApp.swift */; };
+		E732C84A2CC7A5AD00867A2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732C8492CC7A5AD00867A2B /* ContentView.swift */; };
+		E732C84C2CC7A5AF00867A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E732C84B2CC7A5AF00867A2B /* Assets.xcassets */; };
+		E732C84F2CC7A5AF00867A2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E732C84E2CC7A5AF00867A2B /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,11 @@
 		E732C82B2CC7A48000867A2B /* BaccaratLib.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = BaccaratLib.docc; sourceTree = "<group>"; };
 		E732C8312CC7A48000867A2B /* BaccaratLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaccaratLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E732C8362CC7A48000867A2B /* BaccaratLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaccaratLibTests.swift; sourceTree = "<group>"; };
+		E732C8452CC7A5AC00867A2B /* BaccaratLibExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaccaratLibExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E732C8472CC7A5AD00867A2B /* BaccaratLibExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaccaratLibExampleApp.swift; sourceTree = "<group>"; };
+		E732C8492CC7A5AD00867A2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E732C84B2CC7A5AF00867A2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E732C84E2CC7A5AF00867A2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E732C8422CC7A5AC00867A2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +71,7 @@
 			children = (
 				E732C8292CC7A48000867A2B /* BaccaratLib */,
 				E732C8352CC7A48000867A2B /* BaccaratLibTests */,
+				E732C8462CC7A5AD00867A2B /* BaccaratLibExample */,
 				E732C8282CC7A48000867A2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +81,7 @@
 			children = (
 				E732C8272CC7A48000867A2B /* BaccaratLib.framework */,
 				E732C8312CC7A48000867A2B /* BaccaratLibTests.xctest */,
+				E732C8452CC7A5AC00867A2B /* BaccaratLibExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +101,25 @@
 				E732C8362CC7A48000867A2B /* BaccaratLibTests.swift */,
 			);
 			path = BaccaratLibTests;
+			sourceTree = "<group>";
+		};
+		E732C8462CC7A5AD00867A2B /* BaccaratLibExample */ = {
+			isa = PBXGroup;
+			children = (
+				E732C8472CC7A5AD00867A2B /* BaccaratLibExampleApp.swift */,
+				E732C8492CC7A5AD00867A2B /* ContentView.swift */,
+				E732C84B2CC7A5AF00867A2B /* Assets.xcassets */,
+				E732C84D2CC7A5AF00867A2B /* Preview Content */,
+			);
+			path = BaccaratLibExample;
+			sourceTree = "<group>";
+		};
+		E732C84D2CC7A5AF00867A2B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E732C84E2CC7A5AF00867A2B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +172,23 @@
 			productReference = E732C8312CC7A48000867A2B /* BaccaratLibTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E732C8442CC7A5AC00867A2B /* BaccaratLibExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E732C8502CC7A5AF00867A2B /* Build configuration list for PBXNativeTarget "BaccaratLibExample" */;
+			buildPhases = (
+				E732C8412CC7A5AC00867A2B /* Sources */,
+				E732C8422CC7A5AC00867A2B /* Frameworks */,
+				E732C8432CC7A5AC00867A2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BaccaratLibExample;
+			productName = BaccaratLibExample;
+			productReference = E732C8452CC7A5AC00867A2B /* BaccaratLibExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +203,9 @@
 						CreatedOnToolsVersion = 15.3;
 					};
 					E732C8302CC7A48000867A2B = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					E732C8442CC7A5AC00867A2B = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
@@ -168,6 +225,7 @@
 			targets = (
 				E732C8262CC7A48000867A2B /* BaccaratLib */,
 				E732C8302CC7A48000867A2B /* BaccaratLibTests */,
+				E732C8442CC7A5AC00867A2B /* BaccaratLibExample */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +245,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E732C8432CC7A5AC00867A2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E732C84F2CC7A5AF00867A2B /* Preview Assets.xcassets in Resources */,
+				E732C84C2CC7A5AF00867A2B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -203,6 +270,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E732C8372CC7A48000867A2B /* BaccaratLibTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E732C8412CC7A5AC00867A2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E732C84A2CC7A5AD00867A2B /* ContentView.swift in Sources */,
+				E732C8482CC7A5AD00867A2B /* BaccaratLibExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +516,64 @@
 			};
 			name = Release;
 		};
+		E732C8512CC7A5AF00867A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BaccaratLibExample/Preview Content\"";
+				DEVELOPMENT_TEAM = 9C9D64CGK8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = loma.demo12.BaccaratLibExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E732C8522CC7A5AF00867A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BaccaratLibExample/Preview Content\"";
+				DEVELOPMENT_TEAM = 9C9D64CGK8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = loma.demo12.BaccaratLibExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -466,6 +600,15 @@
 			buildConfigurations = (
 				E732C83F2CC7A48000867A2B /* Debug */,
 				E732C8402CC7A48000867A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E732C8502CC7A5AF00867A2B /* Build configuration list for PBXNativeTarget "BaccaratLibExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E732C8512CC7A5AF00867A2B /* Debug */,
+				E732C8522CC7A5AF00867A2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
