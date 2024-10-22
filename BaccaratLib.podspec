@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'BaccaratLib'
-s.version          = '1.2.1'
+s.version          = '0.0.1'
 s.summary          = 'This is use for hanlding the profile'
 
 s.description      = <<-DESC
